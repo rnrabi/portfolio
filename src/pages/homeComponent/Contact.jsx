@@ -1,4 +1,8 @@
-
+import { FaFacebookF } from "react-icons/fa";
+import { FaTwitter } from "react-icons/fa";
+import { FaLinkedinIn } from "react-icons/fa6";
+import { FaGithub } from "react-icons/fa";
+import { MdOutgoingMail } from "react-icons/md";
 
 const Contact = () => {
     const handleContact = (e) => {
@@ -27,6 +31,21 @@ const Contact = () => {
                                 <span className="mb-1">Your phone</span>
                                 <input type="text" placeholder="Your phone" className="block w-full rounded-md shadow-sm focus:ring focus:ring-opacity-75 focus:dark:ring-violet-600 dark:bg-gray-100 border p-3 mb-8" />
                             </label>
+                            <div>
+                                <ul className="flex justify-evenly">
+
+                                    <li className="border border-gray-500 rounded-full p-3"><a href="https://www.facebook.com/rabindro.rabi.7"><FaFacebookF></FaFacebookF></a></li>
+
+                                    <li className="border border-gray-500 rounded-full p-3"><a href="https://x.com/home"><FaTwitter></FaTwitter></a></li>
+
+                                    <li className="border border-gray-500 rounded-full p-3"><a href="https://www.linkedin.com/in/rnrabi"><FaLinkedinIn></FaLinkedinIn></a></li>   
+
+                                    <li className="border border-gray-500 rounded-full p-3"><a href="https://github.com/rnrabi"><FaGithub></FaGithub></a></li>  
+                                </ul>
+                                 <div className="mx-auto">
+                                    <a href="https://mail.google.com" className="flex gap-2 justify-center items-center mt-4"><MdOutgoingMail></MdOutgoingMail> rnrabi913@gmail.com</a>
+                                 </div>
+                            </div>
 
                         </div>
 
