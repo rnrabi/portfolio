@@ -7,10 +7,15 @@ const Footer = () => {
         <div>
             <footer className="footer footer-center bg-base-200 text-base-content rounded p-10">
                 <nav className="grid grid-flow-col gap-4">
-                    <a className="link link-hover">About us</a>
-                    <a className="link link-hover">Contact</a>
-                    <a className="link link-hover">Jobs</a>
-                    <a className="link link-hover">Press kit</a>
+                    <a href="#home" className='hover:text-blue-500 hover:underline font-bold'>Home</a>
+
+                    <a href="#about" className='hover:text-blue-500 hover:underline font-bold'>About Me</a>
+
+                    <a href="#portfolio" className='hover:text-blue-500 hover:underline font-bold'>Portfolio</a>
+
+                    <a href="#experience" className='hover:text-blue-500 hover:underline font-bold' >Experience</a>
+
+                    <a href='#contact' className='hover:text-blue-500 hover:underline font-bold'>Contact Me</a>
                 </nav>
 
                 <nav>
@@ -32,7 +37,7 @@ const Footer = () => {
                 </nav>
 
                 <aside>
-                    <p>Copyright © ${new Date().getFullYear()} - All right reserved by Rabindro Nath Barman</p>
+                    <p>Copyright © ${new Date().getFullYear()} - All right reserved by <span className="text-blue-500 font-medium italic">Rabindro Nath Barman</span></p>
                 </aside>
 
             </footer>

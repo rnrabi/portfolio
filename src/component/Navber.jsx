@@ -1,18 +1,16 @@
-import { NavLink } from "react-router-dom";
-
 
 const Navber = () => {
-   
+
     const nav = <>
-        <li><NavLink to='/' className={({ isActive }) => isActive ? 'text-blue-500 underline font-bold' : ''}>Home</NavLink></li>
+        <li><a href="#home" className='hover:text-blue-500 hover:underline font-bold'>Home</a></li>
 
-        <li><NavLink to='/about' className={({ isActive }) => isActive ? 'text-blue-500 underline font-bold' : ''}>About</NavLink></li>
+        <li><a href="#about" className='hover:text-blue-500 hover:underline font-bold'>About Me</a></li>
 
-        <li><NavLink to='/portfolio' className={({ isActive }) => isActive ? 'text-blue-500 underline font-bold' : ''}>Portfolio</NavLink></li>
+        <li><a href="#portfolio" className='hover:text-blue-500 hover:underline font-bold'>Portfolio</a></li>
 
-        <li><NavLink to='#' className={({ isActive }) => isActive ? 'text-blue-500 underline font-bold' : ''}>Experience</NavLink></li>
+        <li><a href="#experience" className='hover:text-blue-500 hover:underline font-bold' >Experience</a></li>
 
-        <li><a href='#contact' className={({ isActive }) => isActive ? 'text-blue-500 underline font-bold' : ''}>Contact Us</a></li>
+        <li><a href='#contact' className='hover:text-blue-500 hover:underline font-bold'>Contact Me</a></li>
 
     </>
 
@@ -42,7 +40,7 @@ const Navber = () => {
                             {nav}
                         </ul>
                     </div>
-                    <a className="btn btn-ghost text-xl">daisyUI</a>
+                    <a id="home" className="btn btn-ghost text-xl">PORTFOLIO</a>
                 </div>
 
                 <div className="navbar-center hidden lg:flex">

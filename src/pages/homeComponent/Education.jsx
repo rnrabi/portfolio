@@ -4,7 +4,7 @@ const Education = () => {
     return (
         <div className="md:flex justify-between mt-10">
             <div>
-                <h2 className="text-left text-3xl font-bold mb-8">Experience</h2>
+                <h2 id="experience" className="text-left text-3xl font-bold mb-8">Experience</h2>
                 <div className="mb-5">
                     <h3 className="text-xl text-gray-400 flex items-center gap-3"><SlCalender></SlCalender>2018 - 2023</h3>
                     <h2 className="text-xl font-semibold">Web designer</h2>
