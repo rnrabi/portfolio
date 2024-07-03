@@ -3,6 +3,7 @@ import { FaDownload } from "react-icons/fa6";
 import TechnicalSkill from "./homeComponent/TechnicalSkill";
 import Projects from "./homeComponent/Projects";
 import Contact from "./homeComponent/Contact";
+import Education from "./homeComponent/Education";
 
 const Home = () => {
 
@@ -29,11 +30,13 @@ const Home = () => {
             {/* project section */}
             <Projects></Projects>
 
-           
-           
+           <hr />
+           {/* experience and education */}
+           <Education></Education>
           
            {/* contact section */}
             <Contact></Contact>
+
 
 
         </div>
