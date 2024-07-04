@@ -1,7 +1,10 @@
+import axios from "axios";
+import { useState } from "react";
 
 
-const ProjectCard = ({ project }) => {
-    console.log(project)
+const ProjectCard = ({ project , handleView}) => {
+    // console.log(project)
+   
     return (
         <div>
             <div className="relative overflow-hidden card bg-base-100 image-full  shadow-xl">
@@ -14,22 +17,10 @@ const ProjectCard = ({ project }) => {
                     <h2 className="card-title">{project.projectName}</h2>
                     <p>{project.description.slice(0, 50)}.....</p>
                     <div className="card-actions justify-end">
-                        <button className="btn btn-primary" onClick={() => document.getElementById('my_modal_2').showModal()}>View Details</button>
+                        <button className="btn btn-primary" onClick={() => handleView(project._id)} >View Details</button>
                     </div>
                 </div>
             </div>
-
-            {/* modal */}
-
-            <dialog id="my_modal_2" className="modal">
-                <div className="modal-box">
-                    <h3 className="font-bold text-lg">Hello!</h3>
-                    <p className="py-4">Press ESC key or click outside to close</p>
-                </div>
-                <form method="dialog" className="modal-backdrop">
-                    <button>close</button>
-                </form>
-            </dialog>
         </div>
     );
 };

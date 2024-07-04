@@ -1,9 +1,11 @@
 import { useQuery } from "@tanstack/react-query";
 import ProjectCard from "./ProjectCard";
 import axios from "axios";
+import { useState } from "react";
 
 
 const Projects = () => {
+    const [modal, setModal] = useState({})
 
     const { data: projects = [] } = useQuery({
         queryKey: ['project'],
@@ -12,7 +14,14 @@ const Projects = () => {
             return data;
         }
     })
-    console.log(projects)
+    // console.log(projects)
+
+    const handleView = async (id) => {
+        const { data } = await axios(`http://localhost:5000/project/${id}`)
+        setModal(data)
+        document.getElementById('my_modal_2').showModal()
+    }
+    console.log(modal)
 
 
     return (
@@ -24,9 +33,21 @@ const Projects = () => {
                     projects.map(project => <ProjectCard
                         key={project._id}
                         project={project}
+                        handleView={handleView}
                     ></ProjectCard>)
                 }
             </div>
+
+            {/* modal */}
+            <dialog id="my_modal_2" className="modal">
+                <div className="modal-box">
+                    <h3 className="font-bold text-lg">{modal.projectName}</h3>
+                    <p className="py-4">Press ESC key or click outside to close</p>
+                </div>
+                <form method="dialog" className="modal-backdrop">
+                    <button>close</button>
+                </form>
+            </dialog>
         </div>
     );
 };
