@@ -35,7 +35,7 @@ const Home = () => {
                     <h2 className="text-3xl font-bold">I am Rabindro Nath Barman</h2>
                     <h3 className="text-2xl font-semibold">I am a web developer</h3>
                     <div className="flex gap-3 mt-5">
-                        <button className="btn btn-outline">Portfolio</button>
+                        <a href="#portfolio"> <button className="btn btn-outline">Portfolio</button></a>
                         <a href={instance.url} download="Rabindro_resume.pdf">
                             <button className="btn"> <FaDownload /> Resume</button>
                         </a>
