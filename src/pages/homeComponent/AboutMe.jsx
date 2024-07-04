@@ -16,7 +16,7 @@ const AboutMe = () => {
                     </div>
 
 
-                    <div className="flex flex-col col-span-12 p-6 divide-y lg:col-span-6 lg:p-10 dark:divide-gray-300">
+                    <div className="flex flex-col col-span-12 p-6 divide-y lg:col-span-6 lg:p-10 dark:divide-slate-400">
 
                         <div className="pt-6 pb-4 space-y-2">
                             <h1 className="text-3xl font-bold">I am a web developer</h1>
