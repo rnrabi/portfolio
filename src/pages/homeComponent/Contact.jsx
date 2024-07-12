@@ -12,8 +12,8 @@ const Contact = () => {
         e.preventDefault();
 
         emailjs
-            .sendForm('service_nz6xy8n', 'template_cxd1rzx', form.current,
-                'YYKgvnk_MQf0ke_s0',
+            .sendForm('service_o6kt0it', 'template_ulda23m', form.current,
+                'uXl16mb1q4qr5jvMw',
             )
             .then(
                 () => {
@@ -39,11 +39,11 @@ const Contact = () => {
                         <div className="py-6 md:py-0 md:px-6">
                             <label className="block">
                                 <span className="mb-1">Your name</span>
-                                <input type="text" name="user_name" placeholder="your name" className="block w-full rounded-md shadow-sm focus:ring focus:ring-opacity-75 focus:dark:ring-violet-600 dark:bg-gray-100 border p-3 mb-8" />
+                                <input type="text" name="to_name" placeholder="your name" className="block w-full rounded-md shadow-sm focus:ring focus:ring-opacity-75 focus:dark:ring-violet-600 dark:bg-gray-100 border p-3 mb-8" />
                             </label>
                             <label className="block">
                                 <span className="mb-1">Your email</span>
-                                <input type="email" name="user_email" placeholder="Your email" className="block w-full rounded-md shadow-sm focus:ring focus:ring-opacity-75 focus:dark:ring-violet-600 dark:bg-gray-100 border p-3 mb-8" />
+                                <input type="email" name="from_email" placeholder="Your email" className="block w-full rounded-md shadow-sm focus:ring focus:ring-opacity-75 focus:dark:ring-violet-600 dark:bg-gray-100 border p-3 mb-8" />
                             </label>
 
                             <label className="block">

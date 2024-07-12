@@ -10,14 +10,14 @@ const Projects = () => {
     const { data: projects = [] } = useQuery({
         queryKey: ['project'],
         queryFn: async () => {
-            const { data } = await axios('http://localhost:5000/projects')
+            const { data } = await axios('https://portfolio-omega-three-33.vercel.app/projects')
             return data;
         }
     })
-    // console.log(projects)
+    console.log(projects)
 
     const handleView = async (id) => {
-        const { data } = await axios(`http://localhost:5000/project/${id}`)
+        const { data } = await axios(`https://portfolio-omega-three-33.vercel.app/project/${id}`)
         setModal(data)
         document.getElementById('my_modal_2').showModal()
     }
