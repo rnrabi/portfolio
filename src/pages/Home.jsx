@@ -6,26 +6,26 @@ import Contact from "./homeComponent/Contact";
 import Education from "./homeComponent/Education";
 import AboutMe from "./homeComponent/AboutMe";
 
-import { usePDF, Document, Page, Text } from '@react-pdf/renderer';
+// import { usePDF, Document, Page, Text } from '@react-pdf/renderer';
 
-const MyDoc = (
-    <Document>
-        <Page>
-            <Text>Name:Rabindro nath barman</Text>
-            <Text>I am a web developer</Text>
-            <Text>Birthdate: 19/05/1989</Text>
-            <Text>Language: Bangla , English</Text>
-            <Text>Nationality: Bangladeshi</Text>
-        </Page>
-    </Document>
-);
+// const MyDoc = (
+//     <Document>
+//         <Page>
+//             <Text>Name:Rabindro nath barman</Text>
+//             <Text>I am a web developer</Text>
+//             <Text>Birthdate: 19/05/1989</Text>
+//             <Text>Language: Bangla , English</Text>
+//             <Text>Nationality: Bangladeshi</Text>
+//         </Page>
+//     </Document>
+// );
 
 const Home = () => {
-    const [instance, updateInstance] = usePDF({ document: MyDoc });
+    // const [instance, updateInstance] = usePDF({ document: MyDoc });
 
-    if (instance.loading) return <div>Loading ...</div>;
+    // if (instance.loading) return <div>Loading ...</div>;
 
-    if (instance.error) return <div>Something went wrong: {error}</div>;
+    // if (instance.error) return <div>Something went wrong: {error}</div>;
 
 
     return (
@@ -36,7 +36,7 @@ const Home = () => {
                     <h3 className="text-2xl font-semibold">I am a web developer</h3>
                     <div className="flex gap-3 mt-5">
                         <a href="#portfolio"> <button className="btn btn-outline">Portfolio</button></a>
-                        <a href={instance.url} download="Rabindro_resume.pdf">
+                        <a href="https://drive.google.com/file/d/1xFs4EOcmis2kNvbPlOpZSMaiwx6negcs/view?usp=sharing">
                             <button className="btn"> <FaDownload /> Resume</button>
                         </a>
 
